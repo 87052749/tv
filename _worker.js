@@ -193,14 +193,7 @@ export default {
                 let detailList = [];
 
                 if (idArr.includes("live_promo")) {
-                    detailList.push({
-                        vod_id: "live_promo",
-                        vod_name: PROMO_TITLE,
-                        vod_pic: PROMO_PIC,
-                        vod_content: "请关注我的TG频道@stymei",
-                        vod_play_from: GLOBAL_PLAY_FROM,
-                        vod_play_url: `引流视频$${PROMO_URL}`
-                    });
+                    detailList.push();
                 }
 
                 let regularItems = vodList.filter(v => idArr.includes(v.vod_id) && v.vod_id !== "live_promo");
