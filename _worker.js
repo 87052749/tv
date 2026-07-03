@@ -7,25 +7,9 @@ const SOURCE_URL = "https://0701.tv1288.xyz";
 // ==========================================
 // === 2. 配置全局引流信息 ====================
 // ==========================================
-const PROMO_TITLE = "✈️关注TG频道@stymei";
-const PROMO_URL = "https://k0u3cydy43y9zw2408x8760xfx5xx9z.djvod.ndcimgs.com/upic/2026/03/07/21/BMjAyNjAzMDcyMTIyMzlfNDI0MDI5NTBfMTg5Nzk0ODUxNjg5XzFfMw==_b_Bc33d39ac3524c256f9ddabce4588794b.mp4";
-const PROMO_PIC = "https://k0u3cydy43y9zw2408x8760xfx5xx9z.djvod.ndcimgs.com/upic/2026/03/07/21/BMjAyNjAzMDcyMTIyMzlfNDI0MDI5NTBfMTg5Nzk0ODUxNjg5XzFfMw==_b_Bc33d39ac3524c256f9ddabce4588794b.mp4?x-oss-process=video/snapshot,t_1000,f_jpg";
-const PROMO_GROUP = "📢 频道关注";
-const GLOBAL_PLAY_FROM = "✈️TG频道@stymei";
 
 // 【黑名单拦截库】只要匹配到这些词，整个分组或单个视频直接干掉
 const SPAM_KEYWORDS = ["注意事项", "加群", "群", "TG", "tg", "交流", "防失联", "关注", "网址", "官网", "广告", "微信", "QQ", "最新", "获取资源", "备用", "防丢", "关于", "频道"];
-
-// 生成引流 Vod 对象的函数
-function getPromoVodItem() {
-    return {
-        vod_id: "live_promo",
-        vod_name: PROMO_TITLE,
-        vod_pic: PROMO_PIC,
-        vod_remarks: "置顶引流",
-        vod_play_from: GLOBAL_PLAY_FROM,
-        vod_play_url: `引流视频$${PROMO_URL}`
-    };
 }
 
 // 检查是否包含引流关键词
